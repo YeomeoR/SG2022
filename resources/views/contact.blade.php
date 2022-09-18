@@ -1,9 +1,14 @@
 @extends('layouts.master')
 
 @section('title')
-    <h1 class="grid h-screen place-items-center">This is the new contact page title for square gain</h1>
+    <h1 class="w-screen ">This is the new contact page title for square gain</h1>
 @endsection
 
+{{-- contact form --}}
+@section('contactForm')
+    <h1 class="grid h-screen place-items-center">CONTACT FORM IN HERE</h1>
+@endsection
+{{-- contact form --}}
 
 @section('signup')
     <div class="absolute  bottom-12 container w-screen">

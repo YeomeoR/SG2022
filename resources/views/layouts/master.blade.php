@@ -46,6 +46,10 @@
         @yield('title')
     </div>
 
+    <div class="container">
+        @yield('contactForm')
+    </div>
+
     <div class="container signup">
         @yield('signup')
     </div>

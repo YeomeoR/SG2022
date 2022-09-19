@@ -43,16 +43,19 @@
 </header>
 <body class="bg-gray-300 flex h-screen flex-col">
     <div class="container">
-        @yield('title')
+        <div class="container">
+            @yield('title')
+        </div>
+        
+        <div class="container">
+            @yield('contactForm')
+        </div>
+        
+        <div class="container signup">
+            @yield('signup')
+        </div>
     </div>
-
-    <div class="container">
-        @yield('contactForm')
-    </div>
-
-    <div class="container signup">
-        @yield('signup')
-    </div>
+    
 </body>
 
 

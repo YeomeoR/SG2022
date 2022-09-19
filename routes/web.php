@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,6 @@ Route::get('/e_learning', function () {
     return view('e_learning');
 });
 // contact
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', [ContactController::class, 'createContact']);
+Route::post('/contact', [ContactController::class, 'saveContact'])->name('createContact');
+

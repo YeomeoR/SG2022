@@ -1,1 +1,1 @@
-{{-- {{ $request->get('email') }} --}}
+You received an email from : {{ $email }} via {{ env('APP_NAME') }}

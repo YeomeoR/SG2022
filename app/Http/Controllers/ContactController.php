@@ -47,8 +47,8 @@ class ContactController extends Controller
             ),
             function ($message) use ($request) {
                 $message->from($request->email);
-                $message->to('info@squaregain.co');
-                $message->cc('robyeomans1@gmail.com');
+                $message->to('robyeomans1@gmail.com');
+                // $message->cc('info@squaregain.co');
                 $message->subject($request->subject);
             }
         );
@@ -85,7 +85,7 @@ class ContactController extends Controller
                 $message->to('robyeomans1@gmail.com');
                 // $message->to('info@squaregain.co');
                 // $message->cc('robyeomans1@gmail.com');
-                $message->subject('We have a new subscriber!');
+                $message->subject($request->email . ' is our newest subscriber!');
             }
         );
 

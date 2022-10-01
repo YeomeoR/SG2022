@@ -36,4 +36,5 @@ Route::get('/e_learning', function () {
 // contact
 Route::get('/contact', [ContactController::class, 'createContact']);
 Route::post('/contact', [ContactController::class, 'saveContact'])->name('createContact');
-
+Route::get('/subscribe', [ContactController::class, 'createSubscriber']);
+Route::post('/subscribe', [ContactController::class, 'saveSubscriber'])->name('subscribe');

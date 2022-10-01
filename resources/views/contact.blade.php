@@ -81,7 +81,8 @@
             <div class="text-xl   text-center  text-white antialiased">Find out about events and other news</div>
         </div>
   
-        <form class=" mt-3  flex   flex-row   flex-wrap" action="" method="POST">
+        <form class=" mt-3  flex   flex-row   flex-wrap" action="{{ route('subscribe') }}" method="POST">
+            @csrf
 	        <div class="text-gray-600  w-2/3">
 	            <input type="text" name="email" class="  w-full  p-2   rounded-l-lg" placeholder="john@mail.com"/>
 	        </div>

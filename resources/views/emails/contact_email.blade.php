@@ -1,11 +1,13 @@
 {{-- <h2>Hello Admin,</h2> --}}
-You received an email from : {{ $fname }}
+You received an email from : {{ $fname }} 
+
 Here are the details:
+
 <b>Name:</b> {{ $fname }} {{ $lname }}
 <b>Email:</b> {{ $email }}
 <b>Subject:</b> {{ $subject }}
 <b>Message:</b> {{ $user_message }}
-Thank You 
+
 
 <!DOCTYPE html>
 <!--Code By Webdevtrick ( https://webdevtrick.com )-->

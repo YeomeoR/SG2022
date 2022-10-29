@@ -1,1 +1,1 @@
-You received an email from : {{ $email }} via {{ env('APP_NAME') }}
+You received an email from : {{ $subscriber }} via {{ env('APP_NAME') }}

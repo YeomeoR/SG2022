@@ -12,8 +12,8 @@
    <div class="">
        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-screen">
            <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="www.squaregain.co/" class="flex items-center">
-                <img src="{{ URL('/images/logo.png') }}" class="mr-3 h-6 sm:h-9" alt="squaregain Logo">
+            <a href="/" class="flex items-center">
+                <img src="{{ URL('/images/sgLogo.png') }}" class="mr-3 h-9 sm:h-12" alt="squaregain Logo">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Square Gain</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -38,7 +38,7 @@
             </div>
         </div>
         </nav>
-    </div> 
+    </div>
 
 </header>
 <body class="bg-gray-300 flex h-screen flex-col">
@@ -46,16 +46,44 @@
         <div class="container">
             @yield('title')
         </div>
-        
+
+        <div class="container">
+            @yield('about')
+        </div>
+        <div class="container">
+            @yield('ourStory')
+        </div>
         <div class="container">
             @yield('contactForm')
         </div>
-        
+        <div class="container">
+            @yield('services')
+        </div>
+        <div class="container">
+            @yield('carbonAccounting')
+        </div>
+        <div class="container">
+            @yield('strategy')
+        </div>
+        <div class="container">
+            @yield('implementation')
+        </div>
+     <div class="container">
+            @yield('learningWorkshops')
+        </div>
+        <div class="container">
+            @yield('reporting')
+        </div>
+        <div class="container">
+            @yield('otherServices')
+        </div>
+
+
         <div class="container signup">
             @yield('signup')
         </div>
     </div>
-    
+
 </body>
 
 

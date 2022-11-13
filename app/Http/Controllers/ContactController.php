@@ -51,6 +51,7 @@ class ContactController extends Controller
                 // $message->cc('info@squaregain.co');
                 $message->subject($request->subject);
             }
+
         );
 
         return redirect()->back()->with('success', 'Your contact request has been sent.');
@@ -67,7 +68,7 @@ class ContactController extends Controller
         // dd($request->all());
 
         $this->validate($request, [
-            'email' => 'required|email|unique:subscribers'
+            'email' => 'required|email'
         ]);
         $subscriber = new Subscriber();
 
@@ -78,8 +79,9 @@ class ContactController extends Controller
         Mail::send(
             'emails.subscribe_email',
             array(
-                'email' => $request->get('email')
-            ),
+                'email' => $request->get('email'),
+
+                ),
             function ($message) use ($request) {
                 $message->from($request->email);
                 $message->to('robyeomans1@gmail.com');
@@ -90,9 +92,9 @@ class ContactController extends Controller
         );
 
         // return redirect()->back()->with('success', 'Your contact request has been sent.');
-
-        return view('subscribe')->with('success', 'Your contact request has been sent.');;
+        // return the view and the variable to pass through to the email
+        return view('subscribe', compact('subscriber'))->with('success', 'Your subscription request has been sent.');
         // dd($request->all());
     }
 }
-// 
+

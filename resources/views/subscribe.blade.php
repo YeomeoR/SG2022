@@ -4,5 +4,5 @@
 
 @section('title')
 <h1>THANKS FOR SUBSCRIBING TO OUR NEWSLETTER</h1>
- <p> {{ $email }} </p>
+{{-- <p> {{ $subscriber }} </p>--}}
 @endsection
